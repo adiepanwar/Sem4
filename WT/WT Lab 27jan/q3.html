@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>2005775_Application Form</title>
+    <style>
+        .control-style:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<form>
+    <fieldset>
+        <legend>
+            <h3>Create User Id and Password </h3>
+        </legend>
+        <label class="control-style" for="userid">User Id:</label>
+        <input type="text" id="userid" name="UserId" value="" placeholder="Your email id" required> <br></br>
+        <lable class="control-style" for="pass"> Password:</lable>
+        <input type="password" id="pass" name="Pass" value="" pattern=" " required>
+        <br><small>Format: combination of no.,alphabets and spcl characters;min 8 and max 16 charac</small><br><br>
+        <lable class="control-style" for="cpass">Confirm Password:</lable>
+        <lable type="password" id="cpass" name="CPass" value="" required><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>PERSONAL INFORMATION</h3>
+        </legend>
+        <img src="ygf.jpeg" alt="Person" style="width:240px;height:200px" ; align="right">
+        First name:<lable class="control-style"> </lable>
+        <input type="text" name="firstname" placeholder="Enter First Name" required><br><br><br>
+        Last name:
+        <input type="text" name="lasttname" placeholder="Enter Last Name" required><br><br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        Birthday:<lable class="control-style"> </lable>
+        <input type="datetime-local" name="bdaytime" required><br><br><br>
+        Country:<input list="Country" name="Country">
+        <datalist id="Country">
+            <option value="India">
+            <option value="US">
+            <option value="Japan">
+            <option value="UK">
+            <option value="China">
+        </datalist><br><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="Adress">Address:</label><br>
+        <textarea name="message" rows="10" cols="30"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>Educational Details</h3>
+        </legend>
+        <label for="Degree">Degree:</label>
+        <select name="Degree" id="Degree">
+            <option value="volvo">BTech</option>
+            <option value="saab">BSc</option>
+            <option value="mercedes">MBBS</option>
+            <option value="audi">B.A.</option>
+        </select><br><br>
+
+        <label for="Cetified Courses Any">Cetified Courses Any:</label><br>
+        <textarea name="message" rows="10" cols="50"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>Work Experience</h3>
+        </legend>
+        <label for="Knowledge">Knowledge in:</label>
+        <input type="checkbox" id="" name="fav_language" value="HTML">
+        <label for="fav_language">HTML</label>
+        <input type="checkbox" id="fav_language" name="fav_language" value="Python">
+        <label for="fav_language">Python</label>
+        <input type="checkbox" id="fav_language" name="fav_language" value="Java">
+        <label for="fav_language">Java</label><br><br>
+
+        <label for="Year of Experience">Year of Experience:</label>
+        <input type="number" id="Year of Experience" name="Year of Experience" min="1" max="20">
+    </fieldset><br>
+    <input type="submit" title="Enter the above details and click me" />
+</form>
+</body>
+
+</html>
